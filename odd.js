@@ -3,7 +3,7 @@ function oddNumbers(numbers) {
 
   const odds = [];
   for (const number of numbers) {
-    if (number % 2 == 1)
+    if (number % 2 === 1)
     {
       odds.push(number);
     }
@@ -16,7 +16,8 @@ function oddNumbers(numbers) {
   }
  
   const count = odds.length;
-   console.log(sum, count);
+  console.log(sum, count);
+  
   const avg = sum / count;
   return avg;
 }
