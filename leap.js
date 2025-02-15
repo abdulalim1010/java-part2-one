@@ -1,5 +1,8 @@
 function isLeapYear(year) {
-  if (year % 4 === 0)
+  if (year % 4 === 0 && year % 100 !== 0) {
+    return true;
+  }
+  else if (year % 400 === 0 && year % 100 === 0)
   {
     return true;
   }
@@ -7,5 +10,5 @@ function isLeapYear(year) {
     return false;
   }
 }
-const leapYear = isLeapYear(38);
+const leapYear = isLeapYear(2222);
 console.log(leapYear);
